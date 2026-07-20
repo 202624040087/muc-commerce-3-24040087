@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}生命周期详情 | 电商用户分析系统{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div>
+        <p class="eyebrow">?? 用户生命周期分析</p>
+        <h1>生命周期阶段详情</h1>
+        <p class="lead">展示不同生命周期阶段的用户分布与流失情况。</p>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-heading">
+        <div>
+            <p class="eyebrow">?? 阶段数据</p>
+            <h2>各生命周期阶段用户统计</h2>
+        </div>
+    </div>
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>生命周期阶段</th>
+                    <th>用户数</th>
+                    <th>流失人数</th>
+                    <th>流失率</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for segment in segments %}
+                <tr>
+                    <td><strong>{{ segment['TenureGroup'] }}</strong></td>
+                    <td>{{ segment['用户数'] }}</td>
+                    <td>{{ segment['流失人数'] }}</td>
+                    <td>{{ "%.1f%%"|format(segment['流失率'] * 100) }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<aside class="insight">
+    <strong>数据观察：</strong>{{ insight }}
+</aside>
+
+<style>
+    .table-wrap {
+        overflow-x: auto;
+        padding: 1rem 0;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 12px 16px;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+    th {
+        background-color: #f5f7fa;
+        font-weight: 600;
+        color: #1a2332;
+    }
+    tr:hover {
+        background-color: #f8f9fc;
+    }
+    .insight {
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background-color: #fef9e7;
+        border-left: 4px solid #f39c12;
+        border-radius: 8px;
+    }
+</style>
+{% endblock %}
