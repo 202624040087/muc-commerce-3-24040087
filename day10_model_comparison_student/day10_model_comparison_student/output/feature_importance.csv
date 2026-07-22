@@ -1,0 +1,37 @@
+feature,importance
+num__Tenure,0.2644607932913367
+num__CashbackAmount,0.09037080406468218
+num__NumberOfAddress,0.07976690913570023
+num__WarehouseToHome,0.0637938009587561
+num__Complain,0.06332245330739147
+num__SatisfactionScore,0.061433939503999654
+num__DaySinceLastOrder,0.061203872430719786
+num__OrderAmountHikeFromlastYear,0.04897127613895848
+num__NumberOfDeviceRegistered,0.043984210216761195
+num__CityTier,0.03168928174784999
+cat__MaritalStatus_Married,0.01999250338047809
+cat__PreferredPaymentMode_Debit Card,0.019986646431417367
+num__OrderCount,0.015473826975183121
+cat__MaritalStatus_Single,0.01490271625356642
+cat__PreferredLoginDevice_Computer,0.013921740232982052
+cat__Gender_Female,0.013195845519446562
+cat__PreferredPaymentMode_E wallet,0.011936473612870747
+cat__PreferredPaymentMode_Credit Card,0.011834771000023081
+cat__PreferredPaymentMode_Cash on Delivery,0.011324147080592026
+cat__PreferedOrderCat_Laptop & Accessory,0.010677038757262893
+num__HourSpendOnApp,0.010279442223947322
+cat__Gender_Male,0.007828225440295846
+cat__PreferedOrderCat_Mobile Phone,0.007638779158614477
+cat__TenureGroup_13-24个月,0.007150633852537164
+num__CouponUsed,0.006039511672448445
+num__IsMobileLogin,0.004400962489051733
+cat__TenureGroup_7-12个月,0.001797937531592721
+cat__PreferredLoginDevice_Mobile Phone,0.0014420114805116502
+cat__PreferedOrderCat_Fashion,0.0010928095979764803
+cat__PreferredPaymentMode_UPI,8.663651304599878e-05
+cat__PreferedOrderCat_Others,0.0
+cat__PreferedOrderCat_Grocery,0.0
+cat__TenureGroup_0-6个月,0.0
+cat__MaritalStatus_Divorced,0.0
+cat__TenureGroup_24个月以上,0.0
+cat__TenureGroup_新用户,0.0

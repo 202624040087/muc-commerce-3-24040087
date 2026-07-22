@@ -1,0 +1,5 @@
+model,tn,fp,fn,tp,total
+baseline,936,0,190,0,1126
+logistic_regression,899,37,86,104,1126
+decision_tree,920,16,10,180,1126
+random_forest,933,3,22,168,1126
